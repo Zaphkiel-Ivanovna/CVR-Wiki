@@ -2,6 +2,7 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import './home.css';
+import variablesJSON from '@site/variables.json'
 
 
 export default function Homepage() {
@@ -30,96 +31,63 @@ export default function Homepage() {
       <div>
         <header className='haiku-header'>
           <nav className='top-nav'>
-            <img className='nav-logo' src={useBaseUrl('/img/logo.svg')} alt="react-haiku logo" />
+            <img className='nav-logo' src={useBaseUrl('/img/CVR_Tutos.png')} alt="react-haiku logo" />
             <div className='nav-links'>
-              <Link className="docs-link" to="/docs/intro">Docs</Link>
-              <a rel='noreferrer' aria-label='github' target="_blank" href="https://github.com/DavidHDev/react-haiku">
-                <img className='nav-img gh' src={useBaseUrl('/img/github.svg')} alt="github octocat logo" />
-              </a>
-              <a className='supporter-button' rel='noreferrer' target="_blank" aria-label="Be The First" href='https://ko-fi.com/davidwebdev'>
-                <button className='sponsor'>
-                  <img className='nav-img' src={useBaseUrl('/img/sponsor.svg')} alt="sponsor heart" />
-                  Support
-                </button>
-              </a>
+              <Link className="docs-link" to="/docs/intro">Tutoriels</Link>
+              <Link className="docs-link" to={variablesJSON.serveurDiscord.discordCVROfficiel}>Discord CVR Officiel</Link>
+              <Link className="docs-link" to={variablesJSON.serveurDiscord.discordCVRFrance}>Discord CVR France</Link>
             </div>
             <div onClick={() => setMenuOpen(!menuOpen)} className='menu-icon'>
-              {menuOpen ? 'Close' : 'Menu'}
+              {menuOpen ? 'Fermer' : 'Menu'}
             </div>
             <div className={menuOpen ? 'overlay visible' : 'overlay'}>
               <div className='overlay-links'>
-                <Link onClick={() => setMenuOpen(false)} to="/docs/intro">Docs</Link>
-                <a onClick={() => setMenuOpen(false)} rel='noreferrer' aria-label='github' target="_blank" href="https://github.com/DavidHDev/react-haiku">
-                  GitHub
-                </a>
-                <a onClick={() => setMenuOpen(false)} rel='noreferrer' target="_blank" aria-label="Be The First" href='https://ko-fi.com/davidwebdev'>
-                  <button>
-                    Support
-                    <img src={useBaseUrl('/img/sponsor.svg')} alt="sponsor heart" />
-                  </button>
-                </a>
+              <Link className="docs-link" to="/docs/intro">Tutoriels</Link>
+              <Link className="docs-link" to={variablesJSON.serveurDiscord.discordCVROfficiel}>Discord CVR Officiel</Link>
+              <Link className="docs-link" to={variablesJSON.serveurDiscord.discordCVRFrance}>Discord CVR France</Link>
               </div>
             </div>
           </nav>
         </header>
-        <img className='hero-graphic-2' src={useBaseUrl('/img/graphic.svg')} alt="graphic illustration" />
 
         <div className='hero-container'>
-          <img className='hero-graphic' src={useBaseUrl('/img/graphic.svg')} alt="graphic illustration" />
           <div className='haiku-hero'>
 
             <h1 className='headline'>
-              React <span>Hooks</span> & <span>Utilities</span> that <br />
-              save time and lines of code
+              Maitrisez le <span>CCK</span> comme un pro !
             </h1>
             <div className='button-bar'>
               <Link to="/docs/intro" className='get-started'>
-                Get Started
+                Commencer le tutoriel
                 <img src={useBaseUrl('/img/chevron.svg')} alt="chevron arrow pointing right" />
               </Link>
-              <div className='command' onClick={() => copy('npm install react-haiku')}>
-                <span>$</span>
-                npm install react-haiku
-                {copied ? <img src={useBaseUrl('/img/copydone.svg')} alt="copy to clipboard success icon" /> : <img src={useBaseUrl('/img/copy.svg')} alt="copy to clipboard icon" />}
-              </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className='features-container'>
-        <div className='features'>
-          <Link to="/docs/category/hooks" className='feature'>
-            <p className='feature-stat'>25</p>
-            <p className='feature-title'>Custom Hooks <img src={useBaseUrl('/img/chevron.svg')} alt="chevron arrow pointing right" /></p>
-          </Link>
-          <Link to="/docs/category/utilities" className='feature'>
-            <p className='feature-stat'>4</p>
-            <p className='feature-title'>Utility Components <img src={useBaseUrl('/img/chevron.svg')} alt="chevron arrow pointing right" /></p>
-          </Link>
-          <a href='https://bundlephobia.com/package/react-haiku@2.0.0' target="_blank" rel="noreferrer" className='feature'>
-            <p className='feature-stat'>{`< 1 kb`}</p>
-            <p className='feature-title'>Minified + Gzipped <img src={useBaseUrl('/img/chevron.svg')} alt="chevron arrow pointing right" /></p>
-          </a>
         </div>
       </div>
 
 
       <div className='sponsors-container'>
         <div className='haiku-sponsors'>
-          <p className='supporters-title'>Support The Creator</p>
-          <p className='support-description'>If you enjoy my work, you can fuel it with more coffee!</p>
-          <a rel='noreferrer' target="_blank" aria-label="Be The First" href='https://ko-fi.com/davidwebdev'>
+          <p className='supporters-title'>Vous rencontrez un problème ?</p>
+          <p className='support-description'>Alors n'hésitez pas à nous rejoindre sur notre serveur Discord !</p>
+          <a rel='noreferrer' target="_blank" aria-label="Be The First" href='https://discord.gg/4uxcxKU2pE'>
             <button className='support-button'>
-              <img className='nav-img' src={useBaseUrl('/img/sponsor.svg')} alt="sponsor heart" />
-              Show Your Support
+              <img className='nav-img' src={useBaseUrl('/img/discord.svg')} alt="discord logo" />
+              Rejoindre le Discord
             </button>
           </a>
         </div>
       </div>
-      <footer className='haiku-footer'>
-        Made with <span>&nbsp;❤&nbsp;</span> by David Haz
-      </footer>
+      <div>
+        <footer className='haiku-footer'>
+        Fais par Zaphkiel#0666 pour CVR France
+        </footer>
+        <footer className='haiku-infos'>
+      Le discord CVR France n'est en aucun cas affilié à Alpha Blend Interactive
+        </footer>
+      </div>
+      
     </section>
   );
 }

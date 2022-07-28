@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const variablesJSON = require('./variables.json')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -56,7 +57,7 @@ const config = {
       navbar: {
         logo: {
           alt: 'CVR Tutoriels FR',
-          src: 'img/logo.svg',
+          src: 'img/CVR_Tutos.png',
         },
         items: [
           {
@@ -66,13 +67,13 @@ const config = {
             label: 'Tutoriels',
           },
           {
-            to: 'https://discord.gg/4uxcxKU2pE',
-            label: 'Discord CVR FR',
+            to: variablesJSON.serveurDiscord.discordCVRFrance,
+            label: 'Discord CVR France',
             position: 'right',
           },
           {
-            to: 'https://discord.gg/abi',
-            label: 'Discord ABI',
+            to: variablesJSON.serveurDiscord.discordCVROfficiel,
+            label: 'Discord CVR Officiel',
             position: 'right',
           }
         ],

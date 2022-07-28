@@ -2,78 +2,73 @@
 sidebar_position: 1
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import useBaseUrl from "@docusaurus/useBaseUrl"
+import Link from "@docusaurus/Link"
+import "@site/src/css/custom.css"
 
 # Introduction
 
 <div align="center">
-	<br />
-	<br />
-	<img src={useBaseUrl('/img/haiku.svg')} alt="react-haiku" width="400" />
-	<br />
-	<br />
-	<b>An awesome collection of React Hooks & Utilities!</b>
-	<br />
-	<br />
-	<br />
-	<br />
-	<hr />
+  <br />
+  <br />
+  <img src={useBaseUrl("/img/CVR_Tutos.png")} alt="react-haiku" width="400" />
+  <br />
+  <br />
+  <b>Une collection de tutoriels pour vous apprendre à maitriser le CCK</b>
+  <br />
+  <br />
+  <br />
+  <br />
+  <hr />
 </div>
 
-[![NPM](https://img.shields.io/npm/l/react-haiku)](https://github.com/DavidHDev/react-haiku/blob/main/LICENSE.md)
-[![npm](https://img.shields.io/npm/v/react-haiku)](https://www.npmjs.com/package/react-haiku)
-[![npm](https://img.shields.io/npm/dm/react-haiku)](https://www.npmjs.com/package/react-haiku)
+## Qu'est ce que le CCK ?
 
-## What is this?
-
-Haiku is a `simple` & `lightweight` React library with the goal of saving
-you time by offering a large collection of `hooks` & `utilities` that will
-help you get the job done faster & more efficiently!
+Le CCK (_kit de création de contenu en français_) permet aux utilisateurs de créer leur propre contenu et de le publier sur la plateforme ChilloutVR. Il offre un large éventail de fonctionnalités et d'outils, dont un système de modules permettant d'étendre encore les possibilités.
 
 <br />
 <hr />
 
+## Prérequis
 
-## Install
+#### Unity
 
-Installing Haiku is very easy! <br />
-*Requires React >=16.8.0*
-
-#### NPM
-```sh
-npm install react-haiku
-```
-
-#### Yarn
-```sh
-yarn add react-haiku
-```
-#### PNPM
-```sh
-pnpm install react-haiku
-```
-<br />
-
-
-## Using Haiku with NextJS
-
-Because Haiku uses ES6 modules, it is not transpiled by NextJS automatically since it's an external dependency, so you may have to follow a few extra steps to set it up correctly:
-
-1. Add the `next-transpile-modules` package to your project:<br/>
-
-```sh
-npm install next-transpile-modules
-```
-
-2. Configure your project's `next.config.js` file to transpile Haiku:
-
-```js
-const withTM = require('next-transpile-modules')(['react-haiku']);
-module.exports = withTM({});
-```
-
-After following these two steps, importing features from `react-haiku` into your project should work as expected! <br/><br/><br/><hr />
-
-<div align="center">
-	<i>I hope you will have as much fun using Haiku as I had creating it!</i>
+<div className="button-bar">
+  <Link to="unityhub://2019.4.31f1/bd5abf232a62" className="get-started">
+    Installer Unity 2019.4.31f1 (Unity Hub)
+    <img src={useBaseUrl("/img/chevron.svg")} alt="chevron arrow pointing right" />
+  </Link>
 </div>
+<div className="button-bar">
+  <Link to="https://download.unity3d.com/download_unity/bd5abf232a62/UnityDownloadAssistant-2019.4.31f1.exe" className="get-started">
+    Installer Unity 2019.4.31f1 (Executable)
+    <img src={useBaseUrl("/img/chevron.svg")} alt="chevron arrow pointing right" />
+  </Link>
+</div>
+
+#### CCK 
+
+<div className="button-bar">
+  <Link to="https://files.abidata.io/static_web/ChilloutVR%20CCK%20v3.3%20RELEASE.unitypackage" className="get-started">
+    Télécharger le CCK v3.3
+    <img src={useBaseUrl("/img/chevron.svg")} alt="chevron arrow pointing right" />
+  </Link>
+</div>
+
+#### Blender (Facultatif)
+
+<div className="button-bar">
+  <Link to="blender.org/download/" className="get-started">
+    Installer Blender (Site officiel)
+    <img src={useBaseUrl("/img/chevron.svg")} alt="chevron arrow pointing right" />
+  </Link>
+</div>
+<div className="button-bar">
+  <Link to="https://store.steampowered.com/app/365670/Blender/?l=french" className="get-started">
+    Installer Blender (Steam)
+    <img src={useBaseUrl("/img/chevron.svg")} alt="chevron arrow pointing right" />
+  </Link>
+</div>
+
+
+<br />
