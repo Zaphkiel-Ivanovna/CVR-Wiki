@@ -1,9 +1,11 @@
 {
     "label": "Composants CCK",
     "collapsible": true,
+    "collapsed": true,
     "position": 5,
     "link": {
-      "type": "generated-index"
+      "type": "doc", 
+      "id": "intro"
     }
   }
   

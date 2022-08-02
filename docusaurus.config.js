@@ -8,7 +8,7 @@ const variablesJSON = require('./variables.json')
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'ChilloutVR CCK FR',
-  tagline: "Tutoriels sur l'utilisation du CCK en Français",
+  tagline: "Wiki sur l'utilisation du CCK en Français",
   url: 'https://cvr-tutos.zaphkiel.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -18,7 +18,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Alpha Blend Interactive', // Usually your GitHub org/user name.
-  projectName: 'cvr-tutos', // Usually your repo name.
+  projectName: 'cvr-wiki', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -53,15 +53,15 @@ const config = {
       },
       navbar: {
         logo: {
-          alt: 'CVR Tutoriels FR',
-          src: 'img/CVR_Tutos.png',
+          alt: 'CVR Wiki FR',
+          src: 'img/CVR_Wiki.png',
         },
         items: [
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutoriels',
+            label: 'Wiki',
           },
           {
             to: variablesJSON.serveurDiscord.discordCVRFrance,

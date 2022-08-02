@@ -31,9 +31,9 @@ export default function Homepage() {
       <div>
         <header className='cvrfr-header'>
           <nav className='top-nav'>
-            <img className='nav-logo' src={useBaseUrl('/img/CVR_Tutos.png')} alt="react-cvrfr logo" />
+            <img className='nav-logo' src={useBaseUrl('/img/CVR_Wiki.png')} alt="react-cvrfr logo" />
             <div className='nav-links'>
-              <Link className="docs-link" to="/docs/intro">Tutoriels</Link>
+              <Link className="docs-link" to="/docs/intro">Wiki</Link>
               <Link className="docs-link" to={variablesJSON.serveurDiscord.discordCVROfficiel}>Discord CVR Officiel</Link>
               <Link className="docs-link" to={variablesJSON.serveurDiscord.discordCVRFrance}>Discord CVR France</Link>
             </div>
@@ -42,7 +42,7 @@ export default function Homepage() {
             </div>
             <div className={menuOpen ? 'overlay visible' : 'overlay'}>
               <div className='overlay-links'>
-              <Link className="docs-link" to="/docs/intro">Tutoriels</Link>
+              <Link className="docs-link" to="/docs/intro">Wiki</Link>
               <Link className="docs-link" to={variablesJSON.serveurDiscord.discordCVROfficiel}>Discord CVR Officiel</Link>
               <Link className="docs-link" to={variablesJSON.serveurDiscord.discordCVRFrance}>Discord CVR France</Link>
               </div>
@@ -58,7 +58,7 @@ export default function Homepage() {
             </h1>
             <div className='button-bar'>
               <Link to="/docs/intro" className='get-started'>
-                Commencer le tutoriel
+                Consulter le Wiki
               </Link>
             </div>
           </div>

@@ -1,6 +1,7 @@
 {
     "label": "Utilitaires",
-    "collapsible": false,
+    "collapsible": true,
+    "collapsed": true,
     "position": 3,
     "link": {
       "type": "generated-index"
