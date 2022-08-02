@@ -27,11 +27,11 @@ export default function Homepage() {
   }, [])
 
   return (
-    <section className='haiku'>
+    <section className='cvrfr'>
       <div>
-        <header className='haiku-header'>
+        <header className='cvrfr-header'>
           <nav className='top-nav'>
-            <img className='nav-logo' src={useBaseUrl('/img/CVR_Tutos.png')} alt="react-haiku logo" />
+            <img className='nav-logo' src={useBaseUrl('/img/CVR_Tutos.png')} alt="react-cvrfr logo" />
             <div className='nav-links'>
               <Link className="docs-link" to="/docs/intro">Tutoriels</Link>
               <Link className="docs-link" to={variablesJSON.serveurDiscord.discordCVROfficiel}>Discord CVR Officiel</Link>
@@ -51,7 +51,7 @@ export default function Homepage() {
         </header>
 
         <div className='hero-container'>
-          <div className='haiku-hero'>
+          <div className='cvrfr-hero'>
 
             <h1 className='headline'>
               Maitrisez le <span>CCK</span> comme un pro !
@@ -59,7 +59,6 @@ export default function Homepage() {
             <div className='button-bar'>
               <Link to="/docs/intro" className='get-started'>
                 Commencer le tutoriel
-                <img src={useBaseUrl('/img/chevron.svg')} alt="chevron arrow pointing right" />
               </Link>
             </div>
           </div>
@@ -68,7 +67,7 @@ export default function Homepage() {
 
 
       <div className='sponsors-container'>
-        <div className='haiku-sponsors'>
+        <div className='cvrfr-sponsors'>
           <p className='supporters-title'>Vous rencontrez un problème ?</p>
           <p className='support-description'>Alors n'hésitez pas à nous rejoindre sur notre serveur Discord !</p>
           <a rel='noreferrer' target="_blank" aria-label="Be The First" href='https://discord.gg/4uxcxKU2pE'>
@@ -80,10 +79,10 @@ export default function Homepage() {
         </div>
       </div>
       <div>
-        <footer className='haiku-footer'>
+        <footer className='cvrfr-footer'>
         Fais par Zaphkiel#0666 pour CVR France
         </footer>
-        <footer className='haiku-infos'>
+        <footer className='cvrfr-infos'>
       Le discord CVR France n'est en aucun cas affilié à Alpha Blend Interactive
         </footer>
       </div>

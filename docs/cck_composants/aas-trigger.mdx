@@ -1,0 +1,119 @@
+# CVR Advanced Avatar Trigger
+
+Avec ce composant, vous pouvez modifier les valeurs des paramètres de vos avatars avancés lorsqu'un **[CVR Pointer](../pointeur/)** entre dans la zone de déclenchement indiquée. La taille et le placement peuvent être ajustés avec les paramètres ci-dessous.  
+La zone de déclenchement se déplacera en même temps que l'os d'armature ou l'objet de jeu qui lui est associé.
+
+### Propriétés
+<hr />
+
+##### Area Size
+
+X/Y/Z Taille de votre zone.
+
+##### Area Offset
+
+Décalage X/Y/Z par rapport à l'emplacement du centre du GameObject.
+
+##### Setting Name
+
+Nom du paramètre du réglage à modifier.
+
+##### Setting Value
+
+La valeur à laquelle le paramètre sera réglé lors du déclenchement.
+
+### Advanced Mode
+<hr />
+
+##### Allowed Pointers
+
+L'ajout de pointeurs à cette liste ignorera tous les autres pointeurs et ne fonctionnera qu'avec ceux contenus dans la liste.
+
+##### Network Interactable
+
+Permet aux joueurs du réseau d'interagir avec votre déclencheur.
+
+##### Allowed Types
+
+N'autorise que les pointeurs ayant ce type.
+
+#### General Properties
+
+##### Setting Name
+
+Nom du paramètre du réglage à modifier.
+
+##### Enabled Particle Interaction
+
+L'activation de cette option permet aux systèmes de particules d'activer ce trigger. Vous devez avoir un [CVR Pointer](../pointer/) sur le même objet de jeu que le trigger pour que cela fonctionne. Les particules ne peuvent déclencher que le trigger **On Enter Trigger**.
+
+#### On Enter Trigger
+
+Actions lorsque [CVR Pointer](../pointer/) entre dans la zone de déclenchement.
+
+##### Setting Value
+
+Valeur définie qui remplacera, s'ajoutera ou se soustraira à la valeur actuelle du paramètre.
+
+##### Delay
+
+Délai avant l'exécution du déclencheur
+
+##### Hold Time
+
+Le temps que le pointeur doit rester dans la zone de déclenchement, jusqu'à ce que le déclencheur soit exécuté.
+
+##### Update Method
+
+*   **Override** (Remplace la valeur des paramètres par la valeur de réglage.)
+*   **Add** (Ajoute la valeur de réglage à la valeur des paramètres)
+*   **Subtract** (Soustrait la valeur des paramètres de la valeur des paramètres.)
+
+#### On Exit Trigger
+
+Actions lorsque [CVR Pointer](../pointer/) sort de la zone de déclenchement.
+
+##### Setting Value
+
+Valeur définie qui remplacera, s'ajoutera ou se soustraira à la valeur actuelle du paramètre.
+
+##### Delay
+
+Délai avant l'exécution du déclencheur
+
+##### Update Method
+
+*   **Override** (Remplace la valeur des paramètres par la valeur de réglage.)
+*   **Add** (Ajoute la valeur de réglage à la valeur des paramètres)
+*   **Subtract** (Soustrait la valeur des paramètres de la valeur des paramètres.)
+
+#### On Stay Trigger
+
+Actions lorsque [Pointeur CVR](../pointer/) reste dans la zone de déclenchement.
+
+##### Update Method
+
+*   **Set From Position** ()
+*   **Add** (Ajoutera la valeur de **Changement par seconde**.)
+*   **Subtract** (Soustraira la valeur de **Changement par seconde**.)
+
+##### Min Value
+
+Valeur minimale à partir de laquelle la méthode de mise à jour sera lancée.
+
+##### Min Value
+
+Valeur maximale à laquelle la méthode de mise à jour va ou peut aller.
+
+##### Change per sec
+
+Vous pouvez ajouter ou soustraire cette valeur par seconde.
+
+##### Sample Direction
+
+*   **X Positive**
+*   **Y Positive**
+*   **Z Positive**
+*   **X Negative**
+*   **Y Negative**
+*   **Z Negative**

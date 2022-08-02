@@ -1,0 +1,207 @@
+# CVR Avatar
+
+Ce composant est le composant principal de votre avatar, il comporte divers paramètres et variables pertinents pour votre avatar, vous attachez ce composant à l'objet de jeu racine de votre avatar.
+
+### Paramètres généraux de l'avatar
+<hr />
+
+Configuration pour votre position de voix et de vue.
+
+##### View Position
+
+Il s'agit de votre position de vue dans le jeu à partir de laquelle vous souhaitez que votre fenêtre d'affichage s'affiche. Fenêtre de l'éditeur affichée comme 🟢
+
+##### Voice Position
+
+Il s'agit de la position de votre voix en jeu d'où vous voulez que votre voix soit transmise. La fenêtre de l'éditeur s'affiche comme suit : 🔴
+
+##### Voice Parent
+
+L'os auquel votre voix est attachée. Il suivra sa position lorsque vous déplacerez votre avatar dans l'espace mondial.
+
+### Personnalisation de l'avatar
+<hr />
+
+Vous pouvez personnaliser votre avatar pour qu'il fasse plus que les mouvements que nous avons par défaut.
+
+##### Animation Overrides
+
+Ici, vous pouvez placer votre contrôleur de substitution où vous spécifiez l'animation à utiliser à la place de notre configuration par défaut, utilisez le menu contextuel pour créer un nouveau contrôleur de substitution CVR dans le dossier de votre projet unity.
+
+### Clignotement et visions
+<hr />
+
+Vous pouvez configurer votre avatar pour qu'il ait des mouvements oculaires, des clignements d'yeux et des formes mixtes activées par la voix, appelées visèmes.
+
+##### Use Face Mesh
+
+C'est dans cet emplacement que vous placez le maillage de votre corps ou de votre visage dont les formes de mélange doivent être utilisées pour les paramètres ci-dessous.
+
+##### Use Eye Movement
+
+Permet le déplacement automatique de l'œil qui peut se concentrer sur les joueurs proches.
+
+:::tip Basculer pendant l'exécution
+Le mouvement des yeux peut être activé pendant l'exécution par le biais d'une animation, par exemple.
+:::
+
+##### Use Blinking Blendshapes
+
+Active l'action de clignotement des blendshapes remplis dans les emplacements ci-dessous et ils se déclencheront ensemble, par exemple vous pouvez utiliser un blendshape pour faire clignoter les deux yeux ou utiliser deux blendshapes pour chaque œil et ils clignoteront ensemble.
+
+:::tip Basculer pendant l'exécution
+Le clignotement peut être activé pendant l'exécution par le biais d'une animation, par exemple.
+:::
+
+:::caution Avertissement
+Si vous avez une animation utilisant les blendshapes sélectionnés, votre clignotement ne fonctionnera pas, gardez-les séparés des blendshapes utilisés dans les animations.
+:::
+
+##### Use Visemes Blendshapes
+
+Permet l'utilisation des visages de blendshape pendant la transmission de votre voix par le chat vocal. Les emplacements de blendshape peuvent être remplis automatiquement s'ils ont un schéma de dénomination qui correspond ou est proche du nom de chaque emplacement.
+
+:::tip Indice
+Le clignotement peut être activé pendant l'exécution par le biais d'une animation, par exemple.
+:::
+
+:::caution Avertissement
+Si vous avez une animation utilisant les blendshapes sélectionnés, vos visages ne fonctionneront pas, gardez-les séparés de l'animation.
+:::
+
+### Balisage avancé
+<hr />
+
+Grâce à la fonction de balisage avancé, vous pouvez définir des balises pour des objets de jeu spécifiques uniquement. Cela signifie que vous pouvez, par exemple, marquer une source audio spécifique comme étant une source audio longue portée, ce qui n'entraînera pas la suppression de toutes les sources audio, mais uniquement de cette source spécifique.
+
+:::caution Avertissement
+Si vous utilisez le système de marquage avancé, vous devez toujours marquer votre avatar de manière appropriée et répertorier tous les objets de jeu concernés dans cette liste.
+:::
+
+##### Tags
+
+Définissez les balises que vous souhaitez pour cet objet de jeu particulier. Vous pouvez avoir plusieurs balises sur un objet de jeu.
+
+##### GameObject
+
+L'objet de jeu que vous voulez marquer doit être défini ici.
+
+##### Fallback GO (GameObject)
+
+Un objet de jeu qui doit être utilisé comme solution de rechange, si l'objet de jeu défini ci-dessus est soumis à une règle de filtrage.
+
+### Paramétrage avancé de l'avatar
+<hr />
+
+##### Base Animator
+
+L'animateur de base est utilisé comme base par le générateur AAS. Ainsi, il est très facile d'étendre l'animateur de base tout en utilisant le système AAS.  
+En tant qu'utilisateur novice, il est recommandé d'utiliser celui qui est emballé avec le CCK, nommé **_AvatarAnimator_** situé dans le fichier **_Assets/ABI.CCK/Animations_**, vous pouvez utiliser votre propre animateur ici, mais nous vous suggérons d'utiliser celui qui est fourni avec le CCK, à moins que vous ne sachiez ce que vous faites.
+
+##### Override Controller
+
+Cet emplacement n'est utilisé que si vous avez un contrôleur d'annulation déjà rempli et que vous voulez transférer automatiquement les animations d'annulation jointes au nouveau contrôleur généré.
+
+##### Synced Bits Used
+
+Indique le nombre de bits synchronisés que vous avez utilisés.
+
+##### Create Animator (Button)
+
+Génère un nouveau contrôleur d'animation et un nouveau contrôleur de substitution à partir des configurations que vous avez effectuées.
+
+##### Attach created Override to Avatar (Button)
+
+Attache le contrôleur d'annulation nouvellement généré directement au CVRAvatar.
+
+### Entrée
+
+##### Name
+
+Nom de l'entrée, il sera affiché dans la fenêtre avancée de l'avatar dans le jeu.
+
+##### Parameter
+
+Nom du paramètre qui sera utilisé dans l'animateur. Il est automatiquement généré dans le nouvel animateur si vous utilisez le bouton de génération ou peut être ajouté manuellement si vous avez de l'expérience dans la configuration d'animateurs personnalisés.
+
+### Types
+
+#### Game Object Toggle
+
+Crée une case à cocher ou à bascule dans la fenêtre avancée de votre avatar dans le jeu.
+
+##### Use Animation
+
+J'utiliserai votre animation jointe comme référence.
+
+##### GameObjects
+
+Crée une animation de basculement pour vos objets de jeu placés dans la liste.
+
+##### Default
+
+Valeur par défaut du type sélectionné.
+
+#### Game Object Dropdown
+
+Crée un menu déroulant dans lequel vous pouvez choisir entre différents objets du jeu dans la fenêtre avancée de votre avatar dans le jeu.
+
+##### Options
+
+Une liste d'objets de jeu parmi lesquels vous allez choisir. Vous pouvez en avoir autant que vous le souhaitez dans une liste déroulante. Nous vous déconseillons de créer des listes trop longues, car il sera difficile de sélectionner toutes les options disponibles dans le jeu.
+
+#### Material Color
+
+Crée trois curseurs dans la fenêtre avancée de votre avatar dans le jeu pour choisir votre couleur.
+
+##### Material Properties
+
+Sélectionnez la propriété du matériau (vecteur 3) que vous souhaitez modifier.
+
+#### Slider
+
+Crée un curseur dans la fenêtre avancée de votre avatar dans le jeu.
+
+##### Material Properties
+
+Sélectionnez la propriété du matériau que vous souhaitez modifier.
+
+#### Joystick 2D
+
+Crée un plan 2D dont vous pouvez choisir la position dans la fenêtre avancée de votre avatar dans le jeu.
+
+Range Min et Max définissent la taille ou l'échelle du plan du Joystick.
+
+##### Range Min
+
+Définit la plage / valeur minimale ou de départ du Joystick 2D. Cela signifie qu'il ne peut pas descendre en dessous de cette valeur.
+
+##### Range Max
+
+Définit la plage/la valeur maximale ou finale du Joystick 2D. Cela signifie qu'il ne peut pas aller plus haut que cette valeur.
+
+#### Joystick 3D
+
+Crée un plan 2D dont vous pouvez choisir la position à l'aide d'un curseur vertical dans la fenêtre avancée de votre avatar dans le jeu.
+
+Range Min et Max définissent la taille ou l'échelle du plan du Joystick.
+
+##### Range Min
+
+Définit la plage / valeur minimale ou de départ du Joystick 2D. Cela signifie qu'il ne peut pas descendre en dessous de cette valeur.
+
+##### Range Max
+
+Définit la plage/la valeur maximale ou finale du Joystick 2D. Cela signifie qu'il ne peut pas aller plus haut que cette valeur.
+
+#### Input Single
+
+Champ de saisie unique/numéro unique. Ceci affichera un champ de saisie numérique dans le jeu.
+
+#### Input Vector 2
+
+Deux champs de saisie/deux chiffres. Ceci affichera deux champs de saisie de chiffres dans le jeu.
+
+#### Input Vector 3
+
+Trois champs de saisie/trois chiffres. Ceci affichera trois champs de saisie de chiffres dans le jeu.

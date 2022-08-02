@@ -1,6 +1,6 @@
 {
     "label": "Migrer de VRC à CVR",
-    "collapsible": true,
+    "collapsible": false,
     "position": 3,
     "link": {
       "type": "generated-index"

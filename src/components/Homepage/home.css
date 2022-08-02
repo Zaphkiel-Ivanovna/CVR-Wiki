@@ -26,7 +26,7 @@ a {
   background-color: #1B1B1D;
 }
 
-.haiku-header {
+.cvrfr-header {
   background: linear-gradient(to bottom, transparent, #1B1B1D);
 }
 
@@ -35,7 +35,7 @@ a {
   position: relative;
 }
 
-.haiku-footer {
+.cvrfr-footer {
   display: flex;
   width: 100%;
   align-items: center;
@@ -46,7 +46,7 @@ a {
   color: #f5f5f5;
 }
 
-.haiku-infos {
+.cvrfr-infos {
   display: flex;
   width: 100%;
   align-items: center;
@@ -63,7 +63,7 @@ a {
 	float: right;
 }
 
-.haiku-footer span.white {
+.cvrfr-footer span.white {
   color: #FFF;
 }
 
@@ -71,11 +71,11 @@ a {
   width: 100%;
 }
 
-.haiku-footer span {
+.cvrfr-footer span {
   color: #394ed4;
 }
 
-.haiku {
+.cvrfr {
   font-family: 'Clash Grotesk', sans-serif;
   width: 100%;
   min-height: 100vh;
@@ -85,15 +85,15 @@ a {
   overflow-x: hidden;
 }
 
-.haiku a {
+.cvrfr a {
   color: #f5f5f5;
 }
 
-.haiku button {
+.cvrfr button {
   color: #f5f5f5;
 }
 
-.haiku a:hover {
+.cvrfr a:hover {
   text-decoration: none !important;
 }
 
@@ -250,7 +250,7 @@ a {
   transition: opacity 0.2s ease;
 }
 
-.haiku-hero {
+.cvrfr-hero {
   background-color: #1B1B1D;
   width: 80%;
   margin: 0 auto;
@@ -402,7 +402,7 @@ a {
   top: 1px
 }
 
-.haiku-sponsors {
+.cvrfr-sponsors {
   width: 80%;
   margin: 0 auto;
   padding-top: 3em;
