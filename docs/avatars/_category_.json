@@ -1,10 +1,10 @@
 {
-  "position": 4,
-  "label": "🌎 Mondes",
+  "position": 3,
+  "label": "🧙‍♂️ Avatars",
   "collapsible": true,
   "collapsed": true,
   "link": {
     "type": "doc", 
-    "id": "mondes-intro"
+    "id": "avatars-intro"
   }
 }
