@@ -97,3 +97,42 @@ img {
   width: 8px !important;
   height: auto;
 }
+
+table {
+  border-collapse: collapse;
+  background: #272729;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  table-layout: auto;
+  box-sizing: border-box;
+  display: table;
+}
+
+table td, table th {
+  padding-left: 8px;
+  border: 0;
+}
+
+table tr{
+  border-top: 0;
+  border-bottom: 0;
+}
+
+table thead tr {
+  height: 60px;
+  background: #394ED4;
+  font-size: 16px;
+  border-bottom: 0;
+}
+
+table tbody tr {
+  height: 48px;
+}
+
+table tbody tr:last-child {
+  border: 0;
+}
