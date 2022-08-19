@@ -1,23 +1,18 @@
+import useBaseUrl from "@docusaurus/useBaseUrl"
+
 # CVR Asset Info
 
-Descriptions
+Ce composant permet d'associer un Avatar/World/Props à un objet en ligne sur les serveurs ChilloutVR à l'aide d'un identifiant unique propre à l'objet.
+
+<img src={useBaseUrl('/img/composants-example/cvr-asset-info.png')} alt="1" />
 
 ### Propriétés
 <hr />
 
-##### Propriété
+##### Identifiant unique
 
-Description
+Identifiant lié à l'objet sur les serveurs ChilloutVR
 
-* **Value 1** : description
-* **Value 2** : description
-
-<br />
-### Events
-<hr />
-
-##### Event
-
-Description
-
-* **Value Type** : description
+:::caution Avertissement
+Ce composant étant dépendant du [CVR Avatar](../cck_composants/cvr-avatar) ou [CVR World](../cck_composants/cvr-world), celui-ci ne doit pas être utilisé seul.
+:::

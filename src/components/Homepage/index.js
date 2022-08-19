@@ -80,7 +80,7 @@ export default function Homepage() {
       </div>
       <div>
         <footer className='cvrfr-footer'>
-        Fais par Zaphkiel#0666 pour CVR France
+        Fais par Zaphkiel & Ikeiwa pour CVR France
         </footer>
         <footer className='cvrfr-infos'>
       Le discord CVR France n'est en aucun cas affilié à Alpha Blend Interactive

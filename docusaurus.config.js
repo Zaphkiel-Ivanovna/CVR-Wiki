@@ -9,7 +9,7 @@ const variablesJSON = require('./variables.json')
 const config = {
   title: 'ChilloutVR CCK FR',
   tagline: "Wiki sur l'utilisation du CCK en Français",
-  url: 'https://cvr-tutos.zaphkiel.dev',
+  url: 'https://wiki.chilloutvr.fr',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

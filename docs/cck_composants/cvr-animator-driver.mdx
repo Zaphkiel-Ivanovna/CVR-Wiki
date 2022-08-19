@@ -1,23 +1,23 @@
+import useBaseUrl from "@docusaurus/useBaseUrl"
+
 # CVR Animator Driver
 
-Descriptions
+Ce composant peut être utilisé pour contrôler les paramètres d'un [Animator](https://docs.unity3d.com/ScriptReference/Animator.html) d'une autre animation. Utile pour, par exemple, créer des sous-animators et contrôler leurs paramètres avec l'animateur principal.
 
-### Propriétés
-<hr />
+<img src={useBaseUrl('/img/composants-example/cvr-animator-driver.png')} alt="1" />
 
-##### Propriété
+### Animator Parameters
 
-Description
+Une liste des paramètres de l'animateur que vous voulez contrôler.
 
-* **Value 1** : description
-* **Value 2** : description
+##### Animator
 
-<br />
-### Events
-<hr />
+Sélectionnez l'[Animator](https://docs.unity3d.com/ScriptReference/Animator.html) que vous voulez contrôler pour ce paramètre spécifique.
 
-##### Event
+##### Parameter
 
-Description
+Tous les paramètres de l'[Animator](https://docs.unity3d.com/ScriptReference/Animator.html) selectionné seront répertoriés ici.
 
-* **Value Type** : description
+##### Value
+
+Définissez la valeur du paramètre ici. Cette propriété peut être modifiée pendant l'exécution, par exemple par une animation.
